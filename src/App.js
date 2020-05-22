@@ -1,22 +1,25 @@
 import React from 'react';
+import { Grommet, Box, Text } from 'grommet';
+import { hpe } from 'grommet-theme-hpe';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Grommet theme={hpe} themeMode="dark">
+      <Box
+        width="100%"
+        height={{ min: '100vh' }}
+        align="center"
+        justify="center"
+        gap="Medium"
+      >
+        <Text size="xxlarge" weight="bold">
+          HPE Design System
+        </Text>
+        <Text size="large" weight="normal">
+          starter
+        </Text>
+      </Box>
+    </Grommet>
   );
 }
 
